@@ -80,32 +80,6 @@ int main() {
     osimModel.print("MRCLandingReflexesModel.osim");
     
     
-    /*
-    // create the muscle reflex circuits for each muscle
-    MuscleReflexCircuit* mrc_glut_med1_r = new MuscleReflexCircuit(muscleSet[0].getName(), muscleSet[0], threshold, timedelay, defaultControlSignal, normalizedRestLength);
-    mrc_glut_med1_r->setWeights(weights);
-    
-    MuscleReflexCircuit* mrc_glut_med2_r = new MuscleReflexCircuit(muscleSet[1].getName(), muscleSet[1], threshold, timedelay, defaultControlSignal, normalizedRestLength);
-    mrc_glut_med2_r->setWeights(weights);
-    
-    MuscleReflexCircuit* mrc_glut_med3_r = new MuscleReflexCircuit(muscleSet[2].getName(), muscleSet[2], threshold, timedelay, defaultControlSignal, normalizedRestLength);
-    mrc_glut_med3_r->setWeights(weights);
-
-    MuscleReflexCircuit* mrc_bifemlh_r = new MuscleReflexCircuit(muscleSet[3].getName(), muscleSet[3], threshold, timedelay, defaultControlSignal, normalizedRestLength);
-    mrc_bifemlh_r->setWeights(weights);
-    
-    MuscleReflexCircuit* mrc_bifemsh_r = new MuscleReflexCircuit(muscleSet[4].getName(), muscleSet[4], threshold, timedelay, defaultControlSignal, normalizedRestLength);
-    mrc_bifemsh_r->setWeights(weights);
-    
-    MuscleReflexCircuit* mrc_sar_r = new MuscleReflexCircuit(muscleSet[5].getName(), muscleSet[5], threshold, timedelay, defaultControlSignal, normalizedRestLength);
-    mrc_sar_r->setWeights(weights);
-    
-    */
-   
-
-    /*
-     glut_med1_r glut_med2_r glut_med3_r bifemlh_r bifemsh_r sar_r add_mag2_r tfl_r pect_r grac_r glut_max1_r glut_max2_r glut_max3_r iliacus_r psoas_r quad_fem_r gem_r peri_r rect_fem_r vas_int_r med_gas_r lat_gas_r soleus_r tib_post_r flex_dig_r flex_hal_r tib_ant_r per_brev_r per_long_r per_tert_r ext_dig_r ext_hal_r glut_med1_l glut_med2_l glut_med3_l bifemlh_l bifemsh_l sar_l add_mag2_l tfl_l pect_l grac_l glut_max1_l glut_max2_l glut_max3_l iliacus_l psoas_l quad_fem_l gem_l peri_l rect_fem_l vas_int_l med_gas_l lat_gas_l soleus_l tib_post_l flex_dig_l flex_hal_l tib_ant_l per_brev_l per_long_l per_tert_l ext_dig_l ext_hal_l ercspn_r ercspn_l intobl_r intobl_l extobl_r
-     */
     
    /*
     Model model;
