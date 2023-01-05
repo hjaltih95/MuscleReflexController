@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		97DD0C2186894BEFA71BA206 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A94F79EECC48447D8E9E24B1 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				6B407FFE660444FC940574C0 /* CMake Rules */,
+			);
+			dependencies = (
+				D06D0E9CBAE047D191945823 /* PBXTargetDependency */,
+				D533C49E93C34CFBBCCF3B12 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		B9E7986B3E524483BC21C1F3 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4594104A02BA4B6F8F4220C6 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				DF27E32D924F42E786B122B1 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		2E6929FF104B48129722663E /* MuscleReflexController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 879D601D87F841AD888E6735 /* MuscleReflexController.cpp */; };
+		EF9A7C0728082C9A0073D2E2 /* MuscleReflexCircuit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF9A7C0628082C990073D2E2 /* MuscleReflexCircuit.cpp */; };
+		EF9A7C0C28082CE00073D2E2 /* Delay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF9A7C0828082CE00073D2E2 /* Delay.cpp */; };
+		EF9A7C0D28082CE00073D2E2 /* Interneuron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF9A7C0928082CE00073D2E2 /* Interneuron.cpp */; };
+		EF9A7C0E28082CE00073D2E2 /* SimpleSpindle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF9A7C0A28082CE00073D2E2 /* SimpleSpindle.cpp */; };
+		EF9A7C0F28082CE00073D2E2 /* GolgiTendon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF9A7C0B28082CE00073D2E2 /* GolgiTendon.cpp */; };
+		EF9A7C11281192F70073D2E2 /* mainSimulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF9A7C10281192F60073D2E2 /* mainSimulation.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1890AEB7D016406A8B13F4BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A32ED693F81A4910B766925B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9E7986B3E524483BC21C1F3;
+			remoteInfo = ZERO_CHECK;
+		};
+		CC52FC80FC3F4F1E8E01A6CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A32ED693F81A4910B766925B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE85DD212014103AAD1C44A;
+			remoteInfo = MuscleReflexController;
+		};
+		F87C2137EF6E4DCCAB5C094E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A32ED693F81A4910B766925B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9E7986B3E524483BC21C1F3;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		147B6DAAC86D41D1985F6688 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		15F8B3EF00DE43E7813239D2 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		206A8C59D0D7466CBB4ED2DA /* MuscleReflexController */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = MuscleReflexController; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C144320463940DBA513ADF0 /* MuscleReflexController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = MuscleReflexController.h; sourceTree = SOURCE_ROOT; };
+		879D601D87F841AD888E6735 /* MuscleReflexController.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = MuscleReflexController.cpp; sourceTree = SOURCE_ROOT; };
+		EF9A7BFB280777030073D2E2 /* MuscleReflexCircuit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuscleReflexCircuit.h; sourceTree = "<group>"; };
+		EF9A7BFC28078B3B0073D2E2 /* osimMuscleReflexCircuitDLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osimMuscleReflexCircuitDLL.h; sourceTree = "<group>"; };
+		EF9A7BFD28078BAC0073D2E2 /* Interneuron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interneuron.h; sourceTree = "<group>"; };
+		EF9A7BFE28078BAC0073D2E2 /* osimDelayDLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osimDelayDLL.h; sourceTree = "<group>"; };
+		EF9A7BFF28078BAC0073D2E2 /* GolgiTendon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GolgiTendon.h; sourceTree = "<group>"; };
+		EF9A7C0028078BAC0073D2E2 /* osimGolgiTendonDLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osimGolgiTendonDLL.h; sourceTree = "<group>"; };
+		EF9A7C0128078BAD0073D2E2 /* osimSimpleSpindleDLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osimSimpleSpindleDLL.h; sourceTree = "<group>"; };
+		EF9A7C0228078BAD0073D2E2 /* Delay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Delay.h; sourceTree = "<group>"; };
+		EF9A7C0328078BAD0073D2E2 /* SimpleSpindle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleSpindle.h; sourceTree = "<group>"; };
+		EF9A7C0428078BAD0073D2E2 /* osimInterneuronDLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osimInterneuronDLL.h; sourceTree = "<group>"; };
+		EF9A7C0628082C990073D2E2 /* MuscleReflexCircuit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MuscleReflexCircuit.cpp; sourceTree = "<group>"; };
+		EF9A7C0828082CE00073D2E2 /* Delay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Delay.cpp; sourceTree = "<group>"; };
+		EF9A7C0928082CE00073D2E2 /* Interneuron.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Interneuron.cpp; sourceTree = "<group>"; };
+		EF9A7C0A28082CE00073D2E2 /* SimpleSpindle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleSpindle.cpp; sourceTree = "<group>"; };
+		EF9A7C0B28082CE00073D2E2 /* GolgiTendon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GolgiTendon.cpp; sourceTree = "<group>"; };
+		EF9A7C10281192F60073D2E2 /* mainSimulation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mainSimulation.cpp; sourceTree = "<group>"; };
+		F0E1D99252354F5385938D31 /* osimMuscleReflexControllerDLL.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = osimMuscleReflexControllerDLL.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3A9DCA7AB4C46C095147DAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FD0288D221F4CC38DE7A236 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				206A8C59D0D7466CBB4ED2DA /* MuscleReflexController */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14B0A1B6B03C4FCA8A5ED252 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		20DE986D865849C6AF900300 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C144320463940DBA513ADF0 /* MuscleReflexController.h */,
+				EF9A7BFB280777030073D2E2 /* MuscleReflexCircuit.h */,
+				F0E1D99252354F5385938D31 /* osimMuscleReflexControllerDLL.h */,
+				EF9A7BFC28078B3B0073D2E2 /* osimMuscleReflexCircuitDLL.h */,
+				EF9A7C0228078BAD0073D2E2 /* Delay.h */,
+				EF9A7BFF28078BAC0073D2E2 /* GolgiTendon.h */,
+				EF9A7BFD28078BAC0073D2E2 /* Interneuron.h */,
+				EF9A7BFE28078BAC0073D2E2 /* osimDelayDLL.h */,
+				EF9A7C0028078BAC0073D2E2 /* osimGolgiTendonDLL.h */,
+				EF9A7C0428078BAD0073D2E2 /* osimInterneuronDLL.h */,
+				EF9A7C0128078BAD0073D2E2 /* osimSimpleSpindleDLL.h */,
+				EF9A7C0328078BAD0073D2E2 /* SimpleSpindle.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		3EF2341DE8F24AA9839932FF /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				14B0A1B6B03C4FCA8A5ED252 /* CMake Rules */,
+				147B6DAAC86D41D1985F6688 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		60A6D0B2A8354DAE91BD1F18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84B6A664D6244E3CA30FADE2 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				879D601D87F841AD888E6735 /* MuscleReflexController.cpp */,
+				EF9A7C10281192F60073D2E2 /* mainSimulation.cpp */,
+				EF9A7C0828082CE00073D2E2 /* Delay.cpp */,
+				EF9A7C0B28082CE00073D2E2 /* GolgiTendon.cpp */,
+				EF9A7C0928082CE00073D2E2 /* Interneuron.cpp */,
+				EF9A7C0A28082CE00073D2E2 /* SimpleSpindle.cpp */,
+				EF9A7C0628082C990073D2E2 /* MuscleReflexCircuit.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		AC99EB4F1AB64656AF291A94 /* MuscleReflexController */ = {
+			isa = PBXGroup;
+			children = (
+				84B6A664D6244E3CA30FADE2 /* Source Files */,
+				20DE986D865849C6AF900300 /* Header Files */,
+				15F8B3EF00DE43E7813239D2 /* CMakeLists.txt */,
+			);
+			name = MuscleReflexController;
+			sourceTree = "<group>";
+		};
+		CA5CB3AE256A4B11A24C0C65 = {
+			isa = PBXGroup;
+			children = (
+				AC99EB4F1AB64656AF291A94 /* MuscleReflexController */,
+				3EF2341DE8F24AA9839932FF /* ALL_BUILD */,
+				0FD0288D221F4CC38DE7A236 /* Products */,
+				60A6D0B2A8354DAE91BD1F18 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAE85DD212014103AAD1C44A /* MuscleReflexController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF9B11248454E8E951B7F28 /* Build configuration list for PBXNativeTarget "MuscleReflexController" */;
+			buildPhases = (
+				A921A3A0F8764FB88A074DC0 /* Sources */,
+				E3A9DCA7AB4C46C095147DAE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F940DF1CB6FD4868A874646A /* PBXTargetDependency */,
+			);
+			name = MuscleReflexController;
+			productName = MuscleReflexController;
+			productReference = 206A8C59D0D7466CBB4ED2DA /* MuscleReflexController */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A32ED693F81A4910B766925B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1130;
+			};
+			buildConfigurationList = 7D96BA9AAE92429FA8664A1D /* Build configuration list for PBXProject "MuscleReflexController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA5CB3AE256A4B11A24C0C65;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				97DD0C2186894BEFA71BA206 /* ALL_BUILD */,
+				DAE85DD212014103AAD1C44A /* MuscleReflexController */,
+				B9E7986B3E524483BC21C1F3 /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B407FFE660444FC940574C0 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build -f /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		DF27E32D924F42E786B122B1 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build -f /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A921A3A0F8764FB88A074DC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9A7C0728082C9A0073D2E2 /* MuscleReflexCircuit.cpp in Sources */,
+				EF9A7C0E28082CE00073D2E2 /* SimpleSpindle.cpp in Sources */,
+				EF9A7C0D28082CE00073D2E2 /* Interneuron.cpp in Sources */,
+				2E6929FF104B48129722663E /* MuscleReflexController.cpp in Sources */,
+				EF9A7C0F28082CE00073D2E2 /* GolgiTendon.cpp in Sources */,
+				EF9A7C11281192F70073D2E2 /* mainSimulation.cpp in Sources */,
+				EF9A7C0C28082CE00073D2E2 /* Delay.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D06D0E9CBAE047D191945823 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE85DD212014103AAD1C44A /* MuscleReflexController */;
+			targetProxy = CC52FC80FC3F4F1E8E01A6CD /* PBXContainerItemProxy */;
+		};
+		D533C49E93C34CFBBCCF3B12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9E7986B3E524483BC21C1F3 /* ZERO_CHECK */;
+			targetProxy = F87C2137EF6E4DCCAB5C094E /* PBXContainerItemProxy */;
+		};
+		F940DF1CB6FD4868A874646A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9E7986B3E524483BC21C1F3 /* ZERO_CHECK */;
+			targetProxy = 1890AEB7D016406A8B13F4BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02274CEF58A4470FBE342690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		05CD4C83B38C4ECBBAD8B64F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		0F4E0745EDB74E4FB626FFEA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		3AFE516306574B40AC400401 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		46F97A6286134944AB296092 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode_12.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					SPDLOG_COMPILED_LIB,
+					OPENSIM_WITH_CASADI,
+					OPENSIM_WITH_TROPTER,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "\"/Applications/OpenSim 4.3/sdk/lib\" \"/Applications/OpenSim 4.3/sdk/Simbody/lib\" $(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimExampleComponents.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimMoco.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimTools.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimAnalyses.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimActuators.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimSimulation.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimCommon.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/spdlog/lib/spdlog/libspdlog.a\"",
+					"\"/Applications/OpenSim 4.3/sdk/Simbody/lib/libSimTKsimbody.3.8.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/Simbody/lib/libSimTKmath.3.8.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/Simbody/lib/libSimTKcommon.3.8.dylib\"",
+					"-framework",
+					Accelerate,
+					"-lm",
+					"-ldl",
+					"-ldl",
+					"-lm",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimLepton.dylib\"",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MuscleReflexController;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build;
+				SYSTEM_HEADER_SEARCH_PATHS = "\"/Applications/OpenSim 4.3/sdk/include\" \"/Applications/OpenSim 4.3/sdk/include/OpenSim\" \"/Applications/OpenSim 4.3/sdk/Simbody/include/simbody\" \"/Applications/OpenSim 4.3/sdk/spdlog/include\" $(inherited)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		4C7DA42EA2354715B398AB95 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		530CE3B5B0034EDA9F857651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode_12.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					SPDLOG_COMPILED_LIB,
+					OPENSIM_WITH_CASADI,
+					OPENSIM_WITH_TROPTER,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "\"/Applications/OpenSim 4.3/sdk/lib\" \"/Applications/OpenSim 4.3/sdk/Simbody/lib\" $(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimExampleComponents.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimMoco.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimTools.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimAnalyses.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimActuators.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimSimulation.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimCommon.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/spdlog/lib/spdlog/libspdlog.a\"",
+					"\"/Applications/OpenSim 4.3/sdk/Simbody/lib/libSimTKsimbody.3.8.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/Simbody/lib/libSimTKmath.3.8.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/Simbody/lib/libSimTKcommon.3.8.dylib\"",
+					"-framework",
+					Accelerate,
+					"-lm",
+					"-ldl",
+					"-ldl",
+					"-lm",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimLepton.dylib\"",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MuscleReflexController;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build;
+				SYSTEM_HEADER_SEARCH_PATHS = "\"/Applications/OpenSim 4.3/sdk/include\" \"/Applications/OpenSim 4.3/sdk/include/OpenSim\" \"/Applications/OpenSim 4.3/sdk/Simbody/include/simbody\" \"/Applications/OpenSim 4.3/sdk/spdlog/include\" $(inherited)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		6A7C0CEDE7034E1194BE1601 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build/build;
+			};
+			name = MinSizeRel;
+		};
+		6F378DCB2D1A4D12B0761121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		97E869EB8BCC4C10B2DCC0FA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		B175FE56B51F433F8B9A0573 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build/build;
+			};
+			name = Debug;
+		};
+		B80CD05094AF4EB896B30F2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode_12.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					SPDLOG_COMPILED_LIB,
+					OPENSIM_WITH_CASADI,
+					OPENSIM_WITH_TROPTER,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "\"/Applications/OpenSim 4.3/sdk/lib\" \"/Applications/OpenSim 4.3/sdk/Simbody/lib\" $(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++11' ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimExampleComponents.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimMoco.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimTools.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimAnalyses.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimActuators.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimSimulation.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimCommon.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/spdlog/lib/spdlog/libspdlog.a\"",
+					"\"/Applications/OpenSim 4.3/sdk/Simbody/lib/libSimTKsimbody.3.8.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/Simbody/lib/libSimTKmath.3.8.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/Simbody/lib/libSimTKcommon.3.8.dylib\"",
+					"-framework",
+					Accelerate,
+					"-lm",
+					"-ldl",
+					"-ldl",
+					"-lm",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimLepton.dylib\"",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MuscleReflexController;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build;
+				SYSTEM_HEADER_SEARCH_PATHS = "\"/Applications/OpenSim 4.3/sdk/include\" \"/Applications/OpenSim 4.3/sdk/include/OpenSim\" \"/Applications/OpenSim 4.3/sdk/Simbody/include/simbody\" \"/Applications/OpenSim 4.3/sdk/spdlog/include\" $(inherited)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		B86E6F4DD6794B3DA6B97554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build/build;
+			};
+			name = Release;
+		};
+		C80CFC2E68AB40D58DA0F269 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		EB5112377E75494EBB2D336D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Applications/Xcode_12.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					SPDLOG_COMPILED_LIB,
+					OPENSIM_WITH_CASADI,
+					OPENSIM_WITH_TROPTER,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "\"/Applications/OpenSim 4.3/sdk/lib\" \"/Applications/OpenSim 4.3/sdk/Simbody/lib\" $(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimExampleComponents.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimMoco.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimTools.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimAnalyses.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimActuators.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimSimulation.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimCommon.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/spdlog/lib/spdlog/libspdlog.a\"",
+					"\"/Applications/OpenSim 4.3/sdk/Simbody/lib/libSimTKsimbody.3.8.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/Simbody/lib/libSimTKmath.3.8.dylib\"",
+					"\"/Applications/OpenSim 4.3/sdk/Simbody/lib/libSimTKcommon.3.8.dylib\"",
+					"-framework",
+					Accelerate,
+					"-lm",
+					"-ldl",
+					"-ldl",
+					"-lm",
+					"\"/Applications/OpenSim 4.3/sdk/lib/libosimLepton.dylib\"",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MuscleReflexController;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build;
+				SYSTEM_HEADER_SEARCH_PATHS = "\"/Applications/OpenSim 4.3/sdk/include\" \"/Applications/OpenSim 4.3/sdk/include/OpenSim\" \"/Applications/OpenSim 4.3/sdk/Simbody/include/simbody\" \"/Applications/OpenSim 4.3/sdk/spdlog/include\" $(inherited)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		ED7E17BA670B49E6B06E3C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/hjaltihilmarsson/Documents/OpenSim/4.3/Code/CPP/MuscleReflexController/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4594104A02BA4B6F8F4220C6 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F378DCB2D1A4D12B0761121 /* Debug */,
+				05CD4C83B38C4ECBBAD8B64F /* Release */,
+				C80CFC2E68AB40D58DA0F269 /* MinSizeRel */,
+				0F4E0745EDB74E4FB626FFEA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7D96BA9AAE92429FA8664A1D /* Build configuration list for PBXProject "MuscleReflexController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B175FE56B51F433F8B9A0573 /* Debug */,
+				B86E6F4DD6794B3DA6B97554 /* Release */,
+				6A7C0CEDE7034E1194BE1601 /* MinSizeRel */,
+				4C7DA42EA2354715B398AB95 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8AF9B11248454E8E951B7F28 /* Build configuration list for PBXNativeTarget "MuscleReflexController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B80CD05094AF4EB896B30F2B /* Debug */,
+				530CE3B5B0034EDA9F857651 /* Release */,
+				46F97A6286134944AB296092 /* MinSizeRel */,
+				EB5112377E75494EBB2D336D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A94F79EECC48447D8E9E24B1 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7E17BA670B49E6B06E3C4E /* Debug */,
+				02274CEF58A4470FBE342690 /* Release */,
+				3AFE516306574B40AC400401 /* MinSizeRel */,
+				97E869EB8BCC4C10B2DCC0FA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A32ED693F81A4910B766925B /* Project object */;
+}
